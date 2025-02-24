@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">dolphinbotv2</string>
+    <string name="descripcion_logo">Logo de dolphin tech</string>
+    <string name="text_dolphin_tech">Dolphin Tech</string>
+    <string name="text_view_1">¡Bienvenido a la primera versión de nuestro bot con RAG, diseñado para brindarte información sobre nosotros!</string>
+    <string name="logo_de_facebook">Logo de Facebook.</string>
+    <string name="text_facebook">Continuar con Facebook</string>
+    <string name="text_google">Continuar con Google</string>
+    <string name="text_footer">Al continuar aceptas los Términos del Servicio y Políticas de Privacidad del DolphinBot</string>
+    <string name="text_bienvenida">Hola %s!</string>
+    <string name="hint_text">Prengúntale algo a DolphinBot</string>
+    <string name="text_enviar">Logo de enviar un mensaje.</string>
+    <string name="web_client_id">241269832576-oeilt2bojk1gqvppip4ttrjsges842b0.apps.googleusercontent.com</string>
+</resources>

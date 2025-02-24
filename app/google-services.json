@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "241269832576",
+    "project_id": "proy-dolphinbot",
+    "storage_bucket": "proy-dolphinbot.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241269832576:android:455f16d91a79b5b55fdf65",
+        "android_client_info": {
+          "package_name": "com.example.dolphinbotv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241269832576-oeilt2bojk1gqvppip4ttrjsges842b0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsl8GAD3sePThXPT2mu11shvu8g2tdE4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241269832576-oeilt2bojk1gqvppip4ttrjsges842b0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
