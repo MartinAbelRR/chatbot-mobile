@@ -33,9 +33,17 @@ class AuthActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_auth)
 
         auth = FirebaseAuth.getInstance()
+
+        val actualUsuario = auth.currentUser
+        if (actualUsuario != null) {
+            showHome()
+            finish()
+            return
+        }
+
+        setContentView(R.layout.activity_auth)
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.web_client_id))
@@ -89,6 +97,7 @@ class AuthActivity : AppCompatActivity() {
 
     private fun showHome() {
         val user = auth.currentUser
+        val correo = user?.email ?: "Correo no existe."
         val fullName = user?.displayName ?: "Usuario"
         val firstNamefirstName = fullName.split(" ").firstOrNull()?.uppercase() ?: "Usuario"
         val userPhotoUrl = user?.photoUrl?.toString()  ?: ""
@@ -96,6 +105,7 @@ class AuthActivity : AppCompatActivity() {
         val homeIntent = Intent(this, HomeActivity::class.java).apply {
             putExtra("USER_NAME", firstNamefirstName)
             putExtra("USER_PHOTO", userPhotoUrl)
+            putExtra("USER_EMAIL", correo)
         }
         startActivity(homeIntent)
     }
