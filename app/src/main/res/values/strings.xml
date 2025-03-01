@@ -11,4 +11,5 @@
     <string name="hint_text">Prengúntale algo a DolphinBot</string>
     <string name="text_enviar">Logo de enviar un mensaje.</string>
     <string name="web_client_id">241269832576-oeilt2bojk1gqvppip4ttrjsges842b0.apps.googleusercontent.com</string>
+    <string name="descripcion_img_user">Imagen del usuario.</string>
 </resources>
